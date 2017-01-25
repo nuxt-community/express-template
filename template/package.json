@@ -7,13 +7,22 @@
   "scripts": {
     "dev": "nodemon -w server.js -w nuxt.config.js -w api/ server.js",
     "build": "nuxt build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production node server.js",
+    "precommit": "npm run lint",
+    "lint": "standard && eslint --ext .js,.vue --ignore-path .gitignore"
   },
   "dependencies": {
     "express": "^4.14.0",
     "nuxt": "latest"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.13.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-html": "^1.7.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "nodemon": "^1.11.0",
+    "standard": "^8.6.0"
   }
 }
