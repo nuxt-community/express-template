@@ -1,9 +1,6 @@
 module.exports = {
   root: true,
   parser: 'babel-eslint',
-  parserOptions: {
-    sourceType: 'module'
-  },
   env: {
     browser: true,
     node: true
@@ -11,7 +8,9 @@ module.exports = {
   extends: 'standard',
   // required to lint *.vue files
   plugins: [
-    'html'
+    'html',
+    'promise',
+    'standard'
   ],
   // add your custom rules here
   rules: {
