@@ -12,6 +12,7 @@
     "lint": "standard && eslint --ext .js,.vue --ignore-path .gitignore"
   },
   "dependencies": {
+    "axios": "^0.15.3",
     "express": "^4.14.0",
     "nuxt": "latest"
   },

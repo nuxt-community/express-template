@@ -20,5 +20,17 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#3B8070' }
+  loading: { color: '#3B8070' },
+  /*
+  ** Add env variables
+  */
+  env: {
+    baseURL: process.env.BASE_URL || 'http://localhost:3000'
+  },
+  /*
+  ** Add axios globally
+  */
+  build: {
+    vendor: ['axios']
+  }
 }
