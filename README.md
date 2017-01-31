@@ -29,6 +29,9 @@ npm install # or yarn install
 | npm run build | Build the nuxt.js web application for production. |
 | npm start | Start ExpressJS server in production. |
 
+## Live Demo
+
+[https://express.nuxtjs.org](https://express.nuxtjs.org)
 
 ## Documentation
 
