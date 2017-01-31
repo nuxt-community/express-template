@@ -1,6 +1,9 @@
-# Nuxt-Express
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/904724/22470179/b84f58d8-e7ce-11e6-995b-0933711ca566.png"></p>
 
-> [ExpressJS](http://expressjs.com/) + [Nuxt.js](https://nuxtjs.org) = :fire:
+
+# Nuxt.js with Express
+
+> [ExpressJS](http://expressjs.com/) + [Nuxt.js](https://nuxtjs.org) = :zap:
 
 ## Installation
 
