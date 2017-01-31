@@ -40,7 +40,7 @@ export default {
 <style scoped>
 .title
 {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .info
 {
@@ -51,6 +51,6 @@ export default {
 }
 .button
 {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 </style>

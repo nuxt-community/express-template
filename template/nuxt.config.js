@@ -18,10 +18,6 @@ module.exports = {
   */
   css: ['~assets/css/main.css'],
   /*
-  ** Customize the progress-bar color
-  */
-  loading: { color: '#3B8070' },
-  /*
   ** Add env variables
   */
   env: {
