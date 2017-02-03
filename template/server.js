@@ -1,8 +1,7 @@
 const Nuxt = require('nuxt')
 const app = require('express')()
-const server = require('http').createServer(app)
 const host = process.env.HOST || '127.0.0.1'
-const port = process.env.PORT || '3000'
+const port = process.env.PORT || 3000
 
 app.set('port', port)
 // Import API Routes
@@ -26,5 +25,5 @@ if (config.dev) {
 }
 
 // Listen the server
-server.listen(port, host)
+app.listen(port, host)
 console.log('Server listening on ' + host + ':' + port) // eslint-disable-line no-console
