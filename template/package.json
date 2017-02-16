@@ -5,11 +5,17 @@
   "author": "{{ author }}",
   "private": true,
   "scripts": {
-    "dev": "nodemon -w server.js -w nuxt.config.js -w api/ server.js",
-    "build": "nuxt build",
-    "start": "cross-env NODE_ENV=production node server.js",
+    "dev": "nodemon --exec babel-node -w server.js -w nuxt.config.js -w api/ server.js",
+    "build": "nuxt build && babel server.js --out-file server.prod.js",
+    "start": "cross-env NODE_ENV=production node server.prod.js",
     "precommit": "npm run lint",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2"
+    ]
   },
   "dependencies": {
     "axios": "^0.15.3",
@@ -18,7 +24,10 @@
     "nuxt": "latest"
   },
   "devDependencies": {
+    "babel-cli": "^6.22.2",
     "babel-eslint": "^7.1.1",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0",
     "eslint": "^3.13.1",
     "eslint-config-standard": "^6.2.1",
     "eslint-plugin-html": "^1.7.0",
