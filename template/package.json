@@ -7,12 +7,13 @@
   "scripts": {
     "dev": "nodemon -w server.js -w nuxt.config.js -w api/ server.js",
     "build": "nuxt build",
-    "start": "NODE_ENV=production node server.js",
+    "start": "cross-env NODE_ENV=production node server.js",
     "precommit": "npm run lint",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
     "axios": "^0.15.3",
+    "cross-env": "^3.1.4",
     "express": "^4.14.0",
     "nuxt": "latest"
   },
