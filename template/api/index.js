@@ -56,7 +56,7 @@ let _connectLib = (reqMethod = `get`, req, res, next) => {
 
                 // checked the availability of the called method
                 if (API[reqMethod].hasOwnProperty(req.params.method))
-                    API[reqMethod][req.params.method](req, res, null) // call
+                    API[reqMethod][req.params.method](req, res, , (reqMethod === `post` || reqMethod === `put`) ? req.body : null) // call
                 else
                     res.status(400).json(_ErrMsg(3)) // a non-existent method
             }
