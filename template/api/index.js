@@ -1,4 +1,5 @@
 const
+    fs = require('fs'),
     path = require('path'),
     util = require('util'),
     router = require('express').Router()
