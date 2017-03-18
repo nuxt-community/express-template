@@ -21,7 +21,7 @@ import axios from '~plugins/axios'
 export default {
   name: 'id',
   data ({ params, error }) {
-    return axios.get('/api/users/' + params.id)
+    return axios.get(`/api/v1/users/getUser/${params.id}`)
     .then((res) => {
       return { user: res.data }
     })

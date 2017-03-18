@@ -3,7 +3,17 @@ const app = require('express')()
 const host = process.env.HOST || '127.0.0.1'
 const port = process.env.PORT || 3000
 
+const
+    cookieParser = require('cookie-parser'),
+    bodyParser = require('body-parser')
+
 app.set('port', port)
+
+app
+    .use(bodyParser.json())
+    .use(bodyParser.urlencoded({extended: false}))
+    .use(cookieParser())
+
 // Import API Routes
 app.use('/api', require('./api/index'))
 
