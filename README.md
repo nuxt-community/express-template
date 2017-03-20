@@ -33,6 +33,10 @@ npm install # or yarn install
 
 [https://express.nuxtjs.org](https://express.nuxtjs.org)
 
+## Examples
+
+- [Handling Protected SSR Routes](https://github.com/nuxt/express/blob/master/protected-ssr-api.md)
+
 ## Documentation
 
 - [ExpressJS](http://expressjs.com/en/guide/routing.html)
