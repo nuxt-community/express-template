@@ -1,5 +1,8 @@
-var router = require('express').Router()
+import { Router } from 'express'
 
+var router = Router()
+
+// Mock Users
 const users = [
   { name: 'Alexandre' },
   { name: 'Sébastien' }
@@ -20,4 +23,4 @@ router.get('/users/:id', function (req, res, next) {
   }
 })
 
-module.exports = router
+export default router
