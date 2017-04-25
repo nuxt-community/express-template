@@ -19,7 +19,8 @@ npm install # or yarn install
 
 ## ExpressJS Changes
 
-- The `routes` directory is called `api`.
+- There is a  `server` directory with the root of your `express` server.
+- The `routes` directory is called `server/api`.
 
 ## Commands
 
