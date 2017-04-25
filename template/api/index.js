@@ -1,6 +1,10 @@
-var router = require('express').Router()
+import { Router } from 'express'
+
+import users from './users'
+
+var router = Router()
 
 // Add USERS Routes
-router.use(require('./users'))
+router.use(users)
 
-module.exports = router
+export default router
