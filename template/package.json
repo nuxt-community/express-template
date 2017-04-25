@@ -5,34 +5,29 @@
   "author": "{{ author }}",
   "private": true,
   "scripts": {
-    "dev": "nodemon --exec babel-node -w server.js -w nuxt.config.js -w api/ server.js",
-    "build": "nuxt build && babel server.js --out-file server.prod.js",
-    "start": "cross-env NODE_ENV=production node server.prod.js",
+    "dev": "backpack dev",
+    "build": "nuxt build && backpack build",
+    "start": "cross-env NODE_ENV=production node build/main.js",
     "precommit": "npm run lint",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
-  "babel": {
-    "presets": [
-      "es2015",
-      "stage-2"
-    ]
-  },
   "dependencies": {
-    "axios": "^0.15.3",
-    "cross-env": "^3.1.4",
+    "axios": "^0.16.1",
+    "cross-env": "^4.0.0",
     "express": "^4.14.0",
-    "nuxt": "~0.10.5"
+    "nuxt": "~0.10.6",
+    "source-map-support": "^0.4.14"
   },
   "devDependencies": {
-    "babel-cli": "^6.22.2",
     "babel-eslint": "^7.1.1",
-    "babel-preset-es2015": "^6.22.0",
-    "babel-preset-stage-2": "^6.22.0",
+    "backpack-core": "^0.3.0",
     "eslint": "^3.13.1",
-    "eslint-config-standard": "^6.2.1",
-    "eslint-plugin-html": "^1.7.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-html": "^2.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
     "eslint-plugin-promise": "^3.4.0",
-    "eslint-plugin-standard": "^2.0.1",
-    "nodemon": "^1.11.0"
+    "eslint-plugin-standard": "^3.0.1"
   }
 }
