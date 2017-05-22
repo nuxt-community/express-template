@@ -13,21 +13,21 @@
   },
   "dependencies": {
     "axios": "^0.16.1",
-    "cross-env": "^4.0.0",
-    "express": "^4.14.0",
-    "nuxt": "~0.10.6",
-    "source-map-support": "^0.4.14"
+    "cross-env": "^5.0.0",
+    "express": "^4.15.3",
+    "nuxt": "~1.0.0-alpha1",
+    "source-map-support": "^0.4.15"
   },
   "devDependencies": {
-    "babel-eslint": "^7.1.1",
+    "babel-eslint": "^7.2.3",
     "backpack-core": "^0.3.0",
-    "eslint": "^3.13.1",
+    "eslint": "^3.19.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-loader": "^1.7.1",
-    "eslint-plugin-html": "^2.0.1",
+    "eslint-plugin-html": "^2.0.3",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-node": "^4.2.2",
-    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1"
   }
 }
