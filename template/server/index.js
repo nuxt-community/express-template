@@ -25,9 +25,9 @@ async function start() {
   if (config.dev) {
     try {
       await nuxt.build()
-    } catch (e) {
+    } catch (error) {
       console.error(error) // eslint-disable-line no-console
-     process.exit(1)
+      process.exit(1)
     }
   }
   // Listen the server
