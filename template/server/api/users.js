@@ -5,7 +5,8 @@ var router = Router()
 // Mock Users
 const users = [
   { name: 'Alexandre' },
-  { name: 'Sébastien' }
+  { name: 'Pooya' },
+  { name: 'Sébastien' },
 ]
 
 /* GET users listing. */
