@@ -7,7 +7,7 @@ The moment you start dealing with user session, you'll notice that protected rou
 
 ## create middleware/ssr-cookie.js
 
-```
+```js
 import axios from '~plugins/axios'
 
 export default function({isServer, req}) {
@@ -19,7 +19,7 @@ export default function({isServer, req}) {
 
 ## add middleware to nuxt.config.js
 
-```
+```js
 router: {
   middleware: ['ssr-cookie']
 }
