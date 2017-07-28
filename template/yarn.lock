@@ -828,9 +828,9 @@ babylon@^6.17.0, babylon@^6.17.2:
   version "6.17.4"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.17.4.tgz#3e8b7402b88d22c3423e137a1577883b15ff869a"
 
-backpack-core@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/backpack-core/-/backpack-core-0.4.0.tgz#a64c45e2dc48560ecc6aac8dc7a71aff6d606a71"
+backpack-core@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/backpack-core/-/backpack-core-0.4.1.tgz#4a8a0fe17b8a46a4df697003524245be6873e59a"
   dependencies:
     babel-core "^6.25.0"
     babel-loader "^7.1.0"
