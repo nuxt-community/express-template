@@ -1,6 +1,6 @@
 {
   "name": "{{ name }}",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "{{ description }}",
   "author": "{{ author }}",
   "private": true,
@@ -12,21 +12,21 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "axios": "^0.16.1",
-    "cross-env": "^5.0.0",
+    "axios": "^0.16.2",
+    "cross-env": "^5.0.1",
     "express": "^4.15.3",
-    "nuxt": "^1.0.0-alpha.3",
+    "nuxt": "^1.0.0-rc3",
     "source-map-support": "^0.4.15"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "backpack-core": "^0.3.0",
-    "eslint": "^3.19.0",
+    "backpack-core": "^0.4.0",
+    "eslint": "^4.3.0",
     "eslint-config-standard": "^10.2.1",
-    "eslint-loader": "^1.7.1",
-    "eslint-plugin-html": "^2.0.3",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-node": "^4.2.2",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1"
   }
