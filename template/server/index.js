@@ -1,7 +1,7 @@
-import express from 'express'
-import { Nuxt, Builder } from 'nuxt'
+const express = require('express')
+const { Nuxt, Builder } = require('nuxt')
 
-import api from './api'
+const api = require('./api')
 
 const app = express()
 const host = process.env.HOST || '127.0.0.1'

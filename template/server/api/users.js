@@ -1,4 +1,4 @@
-import { Router } from 'express'
+const { Router } = require('express')
 
 const router = Router()
 
@@ -24,4 +24,4 @@ router.get('/users/:id', function (req, res, next) {
   }
 })
 
-export default router
+module.exports = router
