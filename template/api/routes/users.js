@@ -6,7 +6,7 @@ const router = Router()
 const users = [
   { name: 'Alexandre' },
   { name: 'Pooya' },
-  { name: 'Sébastien' },
+  { name: 'Sébastien' }
 ]
 
 /* GET users listing. */

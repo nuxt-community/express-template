@@ -5,9 +5,9 @@
   "author": "{{ author }}",
   "private": true,
   "scripts": {
-    "dev": "node server/index.js",
+    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "node server/index.js",
+    "start": "nuxt build && nuxt start",
     "precommit": "npm run lint",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
@@ -15,7 +15,7 @@
     "axios": "^0.16.2",
     "cross-env": "^5.0.1",
     "express": "^4.15.3",
-    "nuxt": "^1.0.0-rc3",
+    "nuxt": "latest",
     "source-map-support": "^0.4.15"
   },
   "devDependencies": {
