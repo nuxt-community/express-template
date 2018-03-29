@@ -48,6 +48,9 @@ We use [backpack](https://github.com/palmerhq/backpack) to watch and build the a
 - [Nuxt.js](https://nuxtjs.org/guide/)
 - [Vue.js](http://vuejs.org/guide/)
 
+## Alternative [Nuxt Express Module](https://github.com/uptownhr/nuxt-express-module)
+The module adds express into Nuxt's connect middleware stack using Nuxt's module system. The method will also handle hot reloading with out causing the nuxt build server to restart. 
+
 ## Licenses
 
 - [ExpressJS license](https://github.com/expressjs/express/blob/master/LICENSE)
