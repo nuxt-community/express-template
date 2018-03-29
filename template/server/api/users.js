@@ -1,8 +1,12 @@
-var router = require('express').Router()
+import { Router } from 'express'
 
+const router = Router()
+
+// Mock Users
 const users = [
   { name: 'Alexandre' },
-  { name: 'Sébastien' }
+  { name: 'Pooya' },
+  { name: 'Sébastien' },
 ]
 
 /* GET users listing. */
@@ -12,7 +16,7 @@ router.get('/users', function (req, res, next) {
 
 /* GET user by ID. */
 router.get('/users/:id', function (req, res, next) {
-  var id = parseInt(req.params.id)
+  const id = parseInt(req.params.id)
   if (id >= 0 && id < users.length) {
     res.json(users[id])
   } else {
@@ -20,4 +24,4 @@ router.get('/users/:id', function (req, res, next) {
   }
 })
 
-module.exports = router
+export default router
