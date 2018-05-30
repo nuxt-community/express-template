@@ -1,4 +1,4 @@
-import { Router } from 'express'
+const { Router } = require('express')
 
 const router = Router()
 
@@ -6,7 +6,7 @@ const router = Router()
 const users = [
   { name: 'Alexandre' },
   { name: 'Pooya' },
-  { name: 'Sébastien' },
+  { name: 'Sébastien' }
 ]
 
 /* GET users listing. */
@@ -24,4 +24,4 @@ router.get('/users/:id', function (req, res, next) {
   }
 })
 
-export default router
+module.exports = router
