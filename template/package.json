@@ -23,7 +23,7 @@
     "eslint": "^4.19.1",
     "eslint-config-standard": "^10.2.1",
     "eslint-loader": "^1.9.0",
-    "eslint-plugin-html": "^3.2.2",
+    "eslint-plugin-html": "^5.0.5",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.8.0",
