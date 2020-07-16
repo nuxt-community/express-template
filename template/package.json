@@ -5,28 +5,21 @@
   "author": "{{ author }}",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt build && nuxt start",
-    "precommit": "npm run lint",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "dev": "nuxt",
+    "lint": "yarn lint:js",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "start": "nuxt start"
   },
   "dependencies": {
-    "axios": "^0.18.0",
-    "cross-env": "^5.2.0",
-    "express": "^4.16.4",
-    "nuxt": "latest",
-    "source-map-support": "^0.4.18"
+    "@nuxt/http": "latest",
+    "nuxt": "latest"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
-    "eslint": "^4.19.1",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-loader": "^1.9.0",
-    "eslint-plugin-html": "^3.2.2",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0"
+    "@nuxtjs/eslint-config": "^3.0.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.2.0",
+    "eslint-plugin-nuxt": "^1.0.0"
   }
 }

@@ -1,29 +1,28 @@
 {{{{raw}}}}
 <template>
   <section class="container">
-    <img src="~assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
-    <h1 class="title">
-      User
-    </h1>
-    <h2 class="info">
-      {{ user.name }}
-    </h2>
-    <nuxt-link class="button" to="/">
-      Users
-    </nuxt-link>
+    <div>
+      <Logo />
+      <h1 class="title">
+        User
+      </h1>
+      <h2 class="info">
+        {{ user.name }}
+      </h2>
+      <nuxt-link class="button" to="/users">
+        Users
+      </nuxt-link>
+    </div>
   </section>
 </template>
 {{{{/raw}}}}
 
 <script>
-import axios from '~/plugins/axios'
-
 export default {
-  name: 'id',
-  asyncData ({ params, error }) {
-    return axios.get('/api/users/' + params.id)
+  asyncData ({ params, error, $http }) {
+    return $http.$get('/api/users/' + params.id)
       .then((res) => {
-        return { user: res.data }
+        return { user: res }
       })
       .catch((e) => {
         error({ statusCode: 404, message: 'User not found' })
@@ -38,6 +37,14 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .title
 {
   margin-top: 30px;

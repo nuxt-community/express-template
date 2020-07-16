@@ -1,50 +1,92 @@
 {{{{raw}}}}
 <template>
-  <section class="container">
-    <img src="~assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
-    <h1 class="title">
-      USERS
-    </h1>
-    <ul class="users">
-      <li v-for="(user, index) in users" :key="index" class="user">
-        <nuxt-link :to="{ name: 'id', params: { id: index }}">
-          {{ user.name }}
-        </nuxt-link>
-      </li>
-    </ul>
-  </section>
+  <div class="container">
+    <div>
+      <Logo />
+      <h1 class="title">
+        nuxt-express
+      </h1>
+      <div>
+        {{ test }}
+        <div class="links">
+          <a
+            href="/users"
+            class="button--green"
+          >
+            Users List
+          </a>
+        </div>
+      </div>
+      <div class="links">
+        <a
+          href="https://nuxtjs.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--green"
+        >
+          Documentation
+        </a>
+        <a
+          href="https://github.com/nuxt/nuxt.js"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--grey"
+        >
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
 </template>
 {{{{/raw}}}}
-
 <script>
-import axios from '~/plugins/axios'
-
 export default {
-  async asyncData () {
-    let { data } = await axios.get('/api/users')
-    return { users: data }
-  },
-  head () {
+  async asyncData ({ $http }) {
+    const test = await $http.$get('/api/test')
     return {
-      title: 'Users'
+      test
     }
   }
 }
 </script>
 
 <style scoped>
-.title
-{
-  margin: 30px 0;
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.users
-{
-  list-style: none;
-  margin: 0;
-  padding: 0;
+
+.title {
+  font-family:
+    'Quicksand',
+    'Source Sans Pro',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 100px;
+  color: #35495e;
+  letter-spacing: 1px;
 }
-.user
-{
-  margin: 10px 0;
+
+.subtitle {
+  font-weight: 300;
+  font-size: 42px;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+.links {
+  padding-top: 15px;
 }
 </style>
