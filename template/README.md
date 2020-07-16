@@ -1,18 +1,20 @@
-# {{ name }}
-
-> {{ description }}
+# nuxt-express
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
-$ npm install # Or yarn install
+$ yarn install
 
 # serve with hot reload at localhost:3000
-$ npm run dev
+$ yarn dev
 
 # build for production and launch server
-$ npm start
+$ yarn build
+$ yarn start
+
+# generate static project
+$ yarn generate
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

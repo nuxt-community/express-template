@@ -1,16 +1,18 @@
 {{{{raw}}}}
 <template>
   <section class="container">
-    <img src="../assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
-    <h1 class="title">
-      {{ error.statusCode }}
-    </h1>
-    <h2 class="info">
-      {{ error.message }}
-    </h2>
-    <nuxt-link class="button" to="/" v-if="error.statusCode === 404">
-      Homepage
-    </nuxt-link>
+    <div>
+      <Logo />
+      <h1 class="title">
+        {{ error.statusCode }}
+      </h1>
+      <h2 class="info">
+        {{ error.message }}
+      </h2>
+      <nuxt-link class="button" to="/" v-if="error.statusCode === 404">
+        Homepage
+      </nuxt-link>
+    </div>
   </section>
 </template>
 {{{{/raw}}}}
@@ -21,10 +23,31 @@ export default {
 </script>
 
 <style scoped>
-.title
-{
-  margin-top: 15px;
-  font-size: 5em;
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-family:
+    'Quicksand',
+    'Source Sans Pro',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 100px;
+  color: #35495e;
+  letter-spacing: 1px;
 }
 .info
 {
