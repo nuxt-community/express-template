@@ -1,15 +1,16 @@
 {
-  "name": "{{ name }}",
+  "name": "name",
   "version": "1.0.0",
   "description": "{{ description }}",
   "author": "{{ author }}",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
     "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
     "lint": "yarn lint:js",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "start": "nuxt start"
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
     "@nuxt/http": "latest",
