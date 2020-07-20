@@ -5,9 +5,7 @@
 
 > [ExpressJS](http://expressjs.com/) + [Nuxt.js](https://nuxtjs.org) = :zap:
 
-## Live Demo
-
-[https://express.nuxtjs.org](https://express.nuxtjs.org)
+Live Demo: [https://codesandbox.io/s/github/nuxt-community/express-template/tree/demo](https://codesandbox.io/s/github/nuxt-community/express-template/tree/demo)
 
 ## Installation
 
@@ -33,10 +31,6 @@ npm install # or yarn install
 | npm run dev | Start ExpressJS server in development with Nuxt.js in dev mode (hot reloading). Listen on [http://localhost:3000](http://localhost:3000). |
 | npm run build | Build the nuxt.js web application for production. |
 | npm start | Start ExpressJS server in production. |
-
-## Backpack
-
-We use [backpack](https://github.com/palmerhq/backpack) to watch and build the application, so you can use the latest ES6 features (module syntax, async/await, etc.).
 
 ## Examples
 
