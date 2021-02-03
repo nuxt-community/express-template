@@ -5,19 +5,36 @@
 
 > [ExpressJS](http://expressjs.com/) + [Nuxt.js](https://nuxtjs.org) = :zap:
 
-Live Demo: [https://codesandbox.io/s/github/nuxt-community/express-template/tree/demo](https://codesandbox.io/s/github/nuxt-community/express-template/tree/demo)
+Live Demo: [https://codesandbox.io/s/github/nuxt-community/express-template](https://codesandbox.io/s/github/nuxt-community/express-template)
 
 ## Installation
 
-This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
+This is a template project, clone or fork the repo and start your project
 
 ```bash
-vue init nuxt-community/express-template <project-name>
+git clone https://github.com/nuxt-community/express-template.git <project-name>
 cd <project-name> # move to your project
-npm install # or yarn install
+yarn install # or npm install
 ```
 
-> Make sure to use a version of vue-cli >= 2.1 (vue -V).
+## Build Setup
+
+```bash
+# install dependencies
+$ yarn install
+
+# serve with hot reload at localhost:3000
+$ yarn dev
+
+# build for production and launch server
+$ yarn build
+$ yarn start
+
+# generate static project
+$ yarn generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
 ## ExpressJS Changes
 
@@ -49,47 +66,3 @@ npm install # or yarn install
 - [VueJS license](https://github.com/vuejs/vue/blob/master/LICENSE)
 
 
-# nuxt-express
-
-## Build Setup
-
-```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
-
-
-
-
-# nuxt-express
-
-## Build Setup
-
-```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
