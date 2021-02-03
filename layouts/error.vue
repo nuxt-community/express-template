@@ -1,4 +1,3 @@
-{{{{raw}}}}
 <template>
   <section class="container">
     <div>
@@ -9,16 +8,21 @@
       <h2 class="info">
         {{ error.message }}
       </h2>
-      <nuxt-link class="button" to="/" v-if="error.statusCode === 404">
+      <nuxt-link v-if="error.statusCode === 404" class="button" to="/">
         Homepage
       </nuxt-link>
     </div>
   </section>
 </template>
-{{{{/raw}}}}
+
 <script>
 export default {
-  props: ['error']
+  props: {
+    error: {
+      type: Object,
+      default: () => ({})
+    }
+  }
 }
 </script>
 

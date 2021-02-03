@@ -1,10 +1,8 @@
-{{{{raw}}}}
 <template>
   <div>
     <Nuxt />
   </div>
 </template>
-{{{{/raw}}}}
 
 <style>
 html {
