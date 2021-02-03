@@ -9,32 +9,13 @@ Live Demo: [https://codesandbox.io/s/github/nuxt-community/express-template](htt
 
 ## Installation
 
-This is a template project, clone or fork the repo and start your project
+This is a template project, click on the green button "Use this template" at the top of this page and get started with GitHub :sparkles:
+
+One you cloned your repository, install the dependencies with:
 
 ```bash
-git clone https://github.com/nuxt-community/express-template.git <project-name>
-cd <project-name> # move to your project
 yarn install # or npm install
 ```
-
-## Build Setup
-
-```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
 ## ExpressJS Changes
 
