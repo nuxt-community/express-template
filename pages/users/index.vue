@@ -1,4 +1,3 @@
-{{{{raw}}}}
 <template>
   <section class="container">
     <div>
@@ -19,7 +18,6 @@
     </div>
   </section>
 </template>
-{{{{/raw}}}}
 
 <script>
 export default {

@@ -1,4 +1,3 @@
-{{{{raw}}}}
 <template>
   <div class="container">
     <div>
@@ -38,7 +37,7 @@
     </div>
   </div>
 </template>
-{{{{/raw}}}}
+
 <script>
 export default {
   async asyncData ({ $http }) {

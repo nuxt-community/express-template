@@ -1,8 +1,6 @@
 {
-  "name": "name",
+  "name": "nuxt-express",
   "version": "1.0.0",
-  "description": "{{ description }}",
-  "author": "{{ author }}",
   "private": true,
   "scripts": {
     "dev": "nuxt",
