@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxt/http": "latest",
+    "express": "latest",
     "nuxt": "latest"
   },
   "devDependencies": {
