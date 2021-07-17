@@ -43,7 +43,7 @@ yarn install # or npm install
 ## Licenses
 
 - [ExpressJS license](https://github.com/expressjs/express/blob/master/LICENSE)
-- [NuxtJS license](https://github.com/nuxt/nuxt.js/blob/master/LICENSE.md)
+- [NuxtJS license](https://github.com/nuxt/nuxt.js/blob/dev/LICENSE)
 - [VueJS license](https://github.com/vuejs/vue/blob/master/LICENSE)
 
 
