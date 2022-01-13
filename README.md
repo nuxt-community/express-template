@@ -3,6 +3,8 @@
 
 # Nuxt.js with Express
 
+#### ⚠️ With Nuxt v3 you should be using [`h3`](https://github.com/unjs/h3) which is already optimized out of the box with [Nitro](https://v3.nuxtjs.org/concepts/server-engine) (and quite similar to Express).
+
 > [ExpressJS](http://expressjs.com/) + [Nuxt.js](https://nuxtjs.org) = :zap:
 
 Live Demo: [https://codesandbox.io/s/github/nuxt-community/express-template](https://codesandbox.io/s/github/nuxt-community/express-template)
