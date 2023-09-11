@@ -1,7 +1,7 @@
 <p align="center"><img width="328px" src="https://nuxtjs.org/logos/nuxt.svg"></p>
 
 
-# Nuxt.js with Express
+# Nuxt 2 with Express
 
 > [ExpressJS](http://expressjs.com/) + [Nuxt.js](https://nuxtjs.org) = :zap:
 
