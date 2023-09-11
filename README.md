@@ -1,11 +1,14 @@
-<p align="center"><img width="328px" src="https://nuxtjs.org/logos/nuxt.svg"></p>
-
-
 # Nuxt 2 with Express
 
-> [ExpressJS](http://expressjs.com/) + [Nuxt.js](https://nuxtjs.org) = :zap:
+> [ExpressJS](http://expressjs.com/) + [Nux 2](https://v2.nuxt.com) = :zap:
 
 Live Demo: [https://codesandbox.io/s/github/nuxt-community/express-template](https://codesandbox.io/s/github/nuxt-community/express-template)
+
+## Nuxt 3
+
+Nuxt 3 is powered by [unjs/h3](https://github.com/unjs/h3) which has a compatible API with Express and is much faster with the ability to run in Workers ([read more about it](https://nuxt.com/blog/nuxt-on-the-edge)).
+
+This is why this template won't be migrated to Nuxt 3.
 
 ## Installation
 
