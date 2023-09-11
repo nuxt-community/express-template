@@ -1,6 +1,6 @@
 # Nuxt 2 with Express
 
-> [ExpressJS](http://expressjs.com/) + [Nux 2](https://v2.nuxt.com) = :zap:
+> [ExpressJS](http://expressjs.com/) + [Nuxt 2](https://v2.nuxt.com) = :zap:
 
 Live Demo: [https://codesandbox.io/s/github/nuxt-community/express-template](https://codesandbox.io/s/github/nuxt-community/express-template)
 
