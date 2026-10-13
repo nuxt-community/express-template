@@ -1,3 +1,6 @@
+> [!NOTE]
+> This repository is archived. This template was built for Nuxt 2, which reached end of life on June 30, 2024.
+
 # Nuxt 2 with Express
 
 > [ExpressJS](http://expressjs.com/) + [Nuxt 2](https://v2.nuxt.com) = :zap:
